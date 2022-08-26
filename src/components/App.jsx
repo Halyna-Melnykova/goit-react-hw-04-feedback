@@ -12,12 +12,7 @@ const App = () => {
   });
 
   const onLeaveFeedback = propertyName => {
-    setState(prevState => {
-      return {
-        ...prevState,
-        [propertyName]: prevState[propertyName] + 1,
-      };
-    });
+    setState({ ...state, [propertyName]: state[propertyName] + 1 });
   };
   const { good, neutral, bad } = state;
   const total = good + neutral + bad;
