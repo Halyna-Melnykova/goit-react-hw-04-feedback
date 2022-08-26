@@ -1,0 +1,15 @@
+.text {
+  margin-bottom: 10px;
+}
+.green {
+  composes: text;
+  color: green;
+}
+.orange {
+  composes: text;
+  color: orange;
+}
+.red {
+  composes: text;
+  color: red;
+}
